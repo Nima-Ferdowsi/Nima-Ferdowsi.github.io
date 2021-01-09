@@ -1,0 +1,529 @@
+.jumbotron {
+    background-image: url(/imagestest/inner1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    min-height: 300px;
+    padding-top: 50px;
+    position: relative;
+
+}
+
+.jumbotron ul li a {
+    color: #2fdab8;
+    ;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.jumbotron ul li {
+
+    color: white;
+    display: inline-block;
+
+
+}
+
+.jumbotron div:nth-child(1) {
+    bottom: 0;
+    position: absolute;
+    left: 50px;
+
+}
+
+.jumbotron div:nth-child(2) h5 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.filter input[type="range"] {
+    -webkit-appearance: none;
+    width: 350px;
+    height: 11px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+
+.filter input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#max-min {
+    border: 1px solid black;
+    width: 350px;
+    margin-top: 2;
+    height: 50px;
+
+}
+
+#max-min h6:nth-child(1) {
+    float: left;
+
+
+}
+
+#max-min h6:nth-child(2) {
+    text-align: right;
+    margin-right: 2px;
+}
+
+ul,
+.category-treeview {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.caret {
+    cursor: pointer;
+
+
+}
+
+.caret::before {
+    content: "\25B6";
+    color: #2fdab8;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari */
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: block;
+
+}
+
+.open-treeview {
+    display: none;
+}
+
+.child-only {
+    color: rebeccapurple;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.child-only li:hover {
+    text-decoration: underline;
+}
+
+.categories-filter {
+    border: 1px solid #d2d2d2;
+    width: 300px;
+    max-width: none;
+    margin-top: 50px;
+}
+
+.categories-header-filter {
+    background-color: #f7f7f7;
+    text-align: center
+}
+
+.categories-header-filter h5 {
+    margin: auto;
+    color: #2fdab8;
+}
+
+.Community-filter {
+    border: 1px solid #d2d2d2;
+    width: 300px;
+    max-width: none !important;
+    margin-top: 50px;
+
+}
+
+/* custome CheackBox
+ */
+/* The container */
+
+.cheackbox-custume {
+    position: relative;
+    display: block;
+    padding-left: 33px;
+    cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.cheackbox-custume input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.cheackmark {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 3px solid #2fdab8;
+    border-radius: 50%;
+    background-color: #eee;
+
+
+}
+
+/* On mouse-over, add a grey background color */
+.cheackbox-custume:hover input~.cheackmark {
+    background-color: #ccc;
+
+}
+
+/* When the radio button is checked, add a blue background */
+.cheackbox-custume input:checked~.cheackmark {
+    background-color: #4CAF50;
+
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.cheackmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.cheackbox-custume input:checked~.cheackmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+.cheackbox-custume .cheackmark:after {
+    top: 9px;
+    left: 9px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.filter-result select {
+    width: 200px;
+    display: inline-block;
+}
+
+
+/* SlideShow */
+slide-show {
+    position: relative;
+    margin: auto;
+
+
+}
+
+
+.slide-image {
+    position: absolute;
+
+}
+
+
+/* image in slideshow */
+.slide-image img {
+    height: 280px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 15px;
+    width: 800px;
+
+}
+
+/* slideshow indicator container*/
+.dot-locations {
+    position: absolute;
+    top: 13%;
+    left: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-active {
+    background-color: #2fdab8;
+}
+
+.fadeSlide {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5.75s;
+    animation-name: fade;
+    animation-duration: 5.75s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.man-detailss {
+    margin-top: 320px;
+    display: inline-block;
+    width: 900px;
+    padding: 0;
+    max-height: 650px;
+    overflow: hidden
+  
+
+
+}
+
+.man-detailss hr {
+    border: 1px solid black;
+    width: 300% !important;
+    opacity: .2;
+}
+
+.man-detailss-info-left {
+    width: 100%;
+
+
+}
+
+
+.man-detailss img {
+    max-width: 100%;
+    width: 200px;
+    height: 300px;
+    float: left;
+
+}
+
+.man-detailss p,
+.man-detailss h5 {
+    margin: auto;
+    display: flex;
+    right: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+/*-- //Tabs --*/
+#tabsContainer {
+
+  background-color: white;
+  padding-top: 30px;
+
+
+}
+
+#tabsContainer h5 {
+  font-size: 40;
+  text-align: center;
+  letter-spacing: 1.5px;
+
+
+
+}
+
+.nav-pills .nav-item .nav-link {
+    background-color: #0080FF;
+    color: white;
+    width: 90%;
+  }
+  
+  .nav-pills .nav-item .nav-link.active {
+    background-color:orange;
+    color: white;
+
+  }
+  
+.product-new-top {
+  background:#fc636b none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  right: 55;
+  padding: 0 10px 1px;
+  position: absolute;
+  top: 0;
+  z-index:99;
+}
+.product-details{
+  width:100px;
+ 
+}
+.card-body a{
+    max-height: 50px;
+    height: 50%;
+  width: 110%;
+  bottom: -10px;
+  left: 0;
+  transition: all 0.5s ease-out 0s;
+  position: relative;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+.card-price h6,.card-price del{
+font-size: 30px;
+}
+.card-price del{
+color: tomato;
+  }
+  .card-img-top{
+    height: 2500px;
+    height: 250px;
+  }
+  .product-card{
+    text-align: center;
+}
+.card{
+    width: 222px;
+}
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 37px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: palevioletred;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    font-size: 40px;
+  }
+@media only screen and (max-width: 600px) {
+
+    .filter input[type="range"] {
+        width: 100%;
+    }
+
+    #max-min {
+        width: 100%;
+
+    }
+
+    .categories-filter {
+        width: 100%;
+        max-width: none;
+
+    }
+
+    .Community-filter {
+        width: 100%;
+        max-width: none;
+
+    }
+
+    .slide-image img {
+        height: 190px;
+        width: 430px;
+        margin-top: 50px;
+        margin: auto;
+
+    }
+
+
+
+    .man-detailss img {
+        max-width: 100%;
+        width: 150px;
+        height: 200px;
+        float: none;
+        padding: 10px;
+
+    }
+
+    .man-detailss hr {
+        border: 1px solid black;
+        width: 100% !important;
+        opacity: .2;
+    }
+
+    .man-detailss p,
+    .man-detailss h5 {
+
+        text-align: center;
+
+    }
+    .card {
+        max-width: 250px;
+      }
+
+
+}
+/* Portrait tablets and small desktops */
+@media  only screen and (min-width: 600px) and (max-width: 991px) {
+ .filter input[type="range"] {
+        width: 210% ;
+    }
+
+    #max-min {
+        width: 210%;
+
+    }
+
+    .categories-filter {
+        width: 210%;
+        max-width: none;
+
+    }
+
+    .Community-filter {
+        width: 210%;
+        max-width: none;
+
+    }
+    .card {
+        max-width: 250px;
+      }
+
+}

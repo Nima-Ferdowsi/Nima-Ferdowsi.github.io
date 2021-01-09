@@ -1,0 +1,60 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SignupandLogin</title>
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/Css/User.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="fade"></div>
+    <div class="loader"></div>
+    <div class="row">
+        <div class="col-md-6 mx-auto p-0">
+            <div class="card">
+                <div class="login-box"
+                     style="margin-top:5rem;">
+                    <div class="login-snip">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                        <div class="login-space">
+                            <form id="homelogin" >
+
+                                <div class="login">
+                                    <span id="notexist" class="text-danger" style="display:none">UserName or Passwod is not Valid</span>
+                                    <div class="group"> <label for="userlog" class="label">Username</label> <input id="userlog" name="UserName" type="text" class="input" placeholder="Enter your username"> </div>
+                                    <div class="group"> <label for="logpass" class="label">Password</label> <input id="logpass" name="Password" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
+                                    <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                                    <div class="group"> <input id="logbtn" class="button" type="button" value="Log In"> </div>
+                                    <div class="hr"></div>
+                                    <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                                </div>
+                            </form>
+                            <div class="sign-up-form">
+                                <span id="signerror" class="text-danger" style="display:none">UserName or Passwod is not Valid</span>
+                                <div class="group"> <label for="firstname" class="label">Firstname</label> <input id="firstname" type="text" class="input" placeholder="Create your Firstname"> </div>
+                                <div class="group"> <label for="lastname" class="label">LastName</label> <input id="lastname" type="text" class="input" placeholder="Create your Lastname"> </div>
+                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
+                                <div class="group"> <label for="pass1" class="label">Password</label> <input id="signpass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                                <div class="group"> <label for="pass2" class="label">Repeat Password</label> <input id="signpass2" type="password" class="input" data-type="password" placeholder="Repeat your password"> </div>
+                                <div class="group"> <label for="em" class="label">Email Address</label> <input id="email" type="email" class="input" placeholder="Enter your email address"> </div>
+                                <div class="group"> <label for="phone" class="label">Phone Number</label> <input id="phone" type="text" class="input" placeholder="Enter your Phone Number"> </div>
+                                <div class="group"> <input id="signbtn" type="button" class="button" value="Sign Up"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/JS/User.js"></script>
+
+
+
+</body>
+
+</html>
+
