@@ -1,5 +1,5 @@
 ﻿.jumbotron {
-	background-image: url(/imagestest/inner1.jpg);
+	background-image: url('../imagestest/inner1.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: auto;

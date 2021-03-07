@@ -102,7 +102,7 @@ class HTML {
         for (var i = 0, len = all1.length; i < len; i++) {
       
           all1[i].addEventListener("click",function(){
-              window.location='/Product.Html'
+              window.location='Product.Html'
             })
           }
     }
@@ -112,7 +112,7 @@ class HTML {
 
         for (var i = 0, len = all.length; i < len; i++) {
             all[i].addEventListener("click",function(){
-              window.location='/Product.Html'
+              window.location='Product.Html'
             })
           }
         
